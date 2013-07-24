@@ -1,0 +1,18 @@
+***********************************************************
+Autonomous Robotics & Perception Group
+The George Washington University
+http://rpg.robotics.gwu.edu/
+***********************************************************
+
+To run this application, type:
+
+$ ./viewer -idev Kinect
+
+It is assumed that the Kinect driver was properly installed beforehand (OpenNI is required for the driver to be installed). The input device controlled by the '-idev' can be changed to any other device:
+
+* Webcam
+* FileReader
+* Bumblebee
+* etc
+
+Keep in mind, however, that some changes have to be done in order for the program to work properly if a different device is used. Specifically, the image holders (glLeft & glRight) might have to be adjusted depending on the number of images returned (some cameras only return one image, in which case only one image holder is required) and also the format of the images might be different (some cameras return greyscale instead of RGB, or the depth of the pixels is not "unsigned short" but "unsigned char").
