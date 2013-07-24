@@ -1,0 +1,18 @@
+[submodule "HAL"]
+	path = HAL
+	url = https://github.com/gwu-robotics/HAL.git
+[submodule "SceneGraph"]
+	path = SceneGraph
+	url = https://github.com/gwu-robotics/SceneGraph.git
+[submodule "Calibu"]
+	path = Calibu
+	url = https://github.com/gwu-robotics/Calibu.git
+[submodule "Pangolin"]
+	path = Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "GLConsole"]
+	path = GLConsole
+	url = git://git.code.sf.net/p/glconsole/code
+[submodule "Sophus"]
+	path = Sophus
+	url = https://github.com/stevenlovegrove/Sophus.git
