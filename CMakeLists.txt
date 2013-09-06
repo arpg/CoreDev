@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8.10)
 # Add auxiliary libraries
 add_subdirectory(GLConsole)
 
-set(BUILD_TESTS off)  # disable Sophus tests
+option(BUILD_TESTS "Build tests." OFF)
 add_subdirectory(Sophus)
 
 # Add GUI Libraries
