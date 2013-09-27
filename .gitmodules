@@ -9,7 +9,7 @@
 	url = https://github.com/gwu-robotics/Calibu.git
 [submodule "Pangolin"]
 	path = Pangolin
-	url = https://github.com/stevenlovegrove/Pangolin.git
+	url = https://github.com/gwu-robotics/Pangolin.git
 [submodule "GLConsole"]
 	path = GLConsole
 	url = git://git.code.sf.net/p/glconsole/code
