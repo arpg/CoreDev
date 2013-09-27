@@ -16,3 +16,6 @@
 [submodule "Sophus"]
 	path = Sophus
 	url = https://github.com/stevenlovegrove/Sophus.git
+[submodule "ba"]
+	path = ba
+	url = git@github.com:gwu-robotics/ba.git
