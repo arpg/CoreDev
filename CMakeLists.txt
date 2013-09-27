@@ -17,6 +17,9 @@ add_subdirectory(Calibu)
 # Add Camera / Device libraries
 add_subdirectory(HAL)
 
+# Add Bundle Adjuster
+add_subdirectory(ba)
+
 # Build Example if requested
 set( BUILD_COREDEV_EXAMPLES false CACHE BOOL force )
 if(BUILD_COREDEV_EXAMPLES)
