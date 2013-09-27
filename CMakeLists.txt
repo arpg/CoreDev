@@ -18,7 +18,11 @@ add_subdirectory(Calibu)
 add_subdirectory(HAL)
 
 # Add Bundle Adjuster
+option(BUILD_BA "Build BA." ON)
+if(BUILD_BA)
 add_subdirectory(ba)
+endif()
+
 
 # Build Example if requested
 set( BUILD_COREDEV_EXAMPLES false CACHE BOOL force )
