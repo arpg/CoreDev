@@ -15,4 +15,4 @@
 	url = git://git.code.sf.net/p/glconsole/code
 [submodule "Sophus"]
 	path = Sophus
-	url = https://github.com/stevenlovegrove/Sophus.git
+	url = https://github.com/gwu-robotics/Sophus.git
