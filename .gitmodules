@@ -12,7 +12,7 @@
 	url = https://github.com/gwu-robotics/Pangolin.git
 [submodule "GLConsole"]
 	path = GLConsole
-	url = git://git.code.sf.net/p/glconsole/code
+	url = https://github.com/gwu-robotics/GLConsole.git
 [submodule "Sophus"]
 	path = Sophus
 	url = https://github.com/gwu-robotics/Sophus.git
