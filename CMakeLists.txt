@@ -8,7 +8,7 @@ option(DISABLE_COREDEV_EXPORTS
   "Should CoreDev subpackages *NOT* be globally exported." OFF)
 
 if(DISABLE_COREDEV_EXPORTS)
-  set(SUBPACKAGES Pangolin SceneGraph Calibu HAL PbMsgs NODE)
+  set(SUBPACKAGES Pangolin SceneGraph Calibu HAL PbMsgs NODE Sophus)
   foreach (package ${SUBPACKAGES})
     set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
   endforeach()
@@ -16,16 +16,23 @@ endif()
 
 option(BUILD_TESTS "Build tests." OFF)
 add_subdirectory(Sophus)
+set(Sophus_DIR ${Sophus_BINARY_DIR})
 
 # Add GUI Libraries
 add_subdirectory(Pangolin)
+set(Pangolin_DIR ${Pangolin_BINARY_DIR}/src)
+
 add_subdirectory(SceneGraph)
+set(SceneGraph_DIR ${SceneGraph_BINARY_DIR})
 
 # Add calibration utils
 add_subdirectory(Calibu)
+set(Calibu_DIR ${Calibu_BINARY_DIR}/src)
 
 # Add Camera / Device libraries
 add_subdirectory(HAL)
+set(HAL_DIR ${HAL_BINARY_DIR})
+set(PbMsgs_DIR ${PbMsgs_BINARY_DIR})
 
 # Build Example if requested
 set( BUILD_COREDEV_EXAMPLES false CACHE BOOL force )
