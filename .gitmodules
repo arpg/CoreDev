@@ -16,3 +16,6 @@
 [submodule "Sophus"]
 	path = Sophus
 	url = https://github.com/gwu-robotics/Sophus.git
+[submodule "CMakeModules"]
+	path = CMakeModules
+	url = https://github.com/gwu-robotics/rpg-cmake.git
