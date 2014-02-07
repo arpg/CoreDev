@@ -1,5 +1,5 @@
 project("RobotPerceptionCollection")
-cmake_minimum_required(VERSION 2.8.10)
+cmake_minimum_required(VERSION 2.8)
 
 # Add auxiliary libraries
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
