@@ -21,6 +21,9 @@ endif()
 option(BUILD_TESTS "Build tests." OFF)
 
 # Add Aux Libraries
+add_subdirectory(miniglog)
+set(MINIGLOG_DIR ${MINIGLOG_BINARY_DIR})
+
 add_subdirectory(Sophus)
 set(Sophus_DIR ${Sophus_BINARY_DIR})
 
