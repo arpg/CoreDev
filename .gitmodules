@@ -19,3 +19,6 @@
 [submodule "CMakeModules"]
 	path = CMakeModules
 	url = https://github.com/gwu-robotics/rpg-cmake.git
+[submodule "miniglog"]
+	path = miniglog
+	url = https://github.com/gwu-robotics/miniglog
