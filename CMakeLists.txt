@@ -12,7 +12,7 @@ option(DISABLE_COREDEV_EXPORTS
   "Should CoreDev subpackages *NOT* be globally exported." OFF)
 
 if(DISABLE_COREDEV_EXPORTS)
-  set(SUBPACKAGES Pangolin SceneGraph Calibu HAL PbMsgs NODE Sophus CVars)
+  set(SUBPACKAGES Pangolin SceneGraph Calibu HAL PbMsgs NODE Sophus CVars miniglog)
   foreach (package ${SUBPACKAGES})
     set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
   endforeach()
