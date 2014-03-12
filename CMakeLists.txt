@@ -29,7 +29,7 @@ set(Sophus_DIR ${Sophus_BINARY_DIR})
 
 # Add GUI Libraries
 add_subdirectory(GLConsole)
-set(CVARS_DIR ${CVars_BINARY_DIR})
+set(CVARS_DIR ${CVARS_BINARY_DIR})
 
 add_subdirectory(Pangolin)
 set(Pangolin_DIR ${Pangolin_BINARY_DIR}/src)
