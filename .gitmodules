@@ -22,3 +22,6 @@
 [submodule "miniglog"]
 	path = miniglog
 	url = https://github.com/gwu-robotics/miniglog
+[submodule "Node"]
+	path = Node
+	url = https://github.com/gwu-robotics/Node.git

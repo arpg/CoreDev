@@ -46,6 +46,9 @@ add_subdirectory(HAL)
 set(HAL_DIR ${HAL_BINARY_DIR})
 set(PbMsgs_DIR ${PbMsgs_BINARY_DIR})
 
+add_subdirectory(Node)
+set(Node_DIR ${Node_BINARY_DIR})
+
 # Build Example if requested
 set( BUILD_COREDEV_EXAMPLES false CACHE BOOL force )
 if(BUILD_COREDEV_EXAMPLES)
