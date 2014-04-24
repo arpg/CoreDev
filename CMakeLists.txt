@@ -14,7 +14,14 @@ option(DISABLE_COREDEV_EXPORTS
 if(DISABLE_COREDEV_EXPORTS)
   set(SUBPACKAGES Pangolin SceneGraph Calibu HAL PbMsgs Node Sophus CVARS miniglog)
   foreach (package ${SUBPACKAGES})
-    set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
+    string(TOUPPER ${package} PACKAGE)
+
+    # Deal with different cases of package names
+    if(EXPORT_${package})
+      set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
+    elseif(EXPORT_${PACKAGE})
+      set(EXPORT_${PACKAGE} OFF CACHE BOOL "Export ${package} package" FORCE)
+    endif()
   endforeach()
 endif()
 
