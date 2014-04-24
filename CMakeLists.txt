@@ -31,12 +31,15 @@ set(Sophus_DIR ${Sophus_BINARY_DIR})
 add_subdirectory(GLConsole)
 set(CVARS_DIR ${CVARS_BINARY_DIR})
 
-add_subdirectory(Pangolin)
-set(Pangolin_DIR ${Pangolin_BINARY_DIR}/src)
+if(NOT ANDROID)
+  add_subdirectory(Pangolin)
+  set(Pangolin_DIR ${Pangolin_BINARY_DIR}/src)
+endif()
 
-add_subdirectory(SceneGraph)
-set(SceneGraph_DIR ${SceneGraph_BINARY_DIR})
-
+if(NOT ANDROID)
+  add_subdirectory(SceneGraph)
+  set(SceneGraph_DIR ${SceneGraph_BINARY_DIR})
+endif()
 # Add calibration utils
 add_subdirectory(Calibu)
 set(Calibu_DIR ${Calibu_BINARY_DIR}/src)
