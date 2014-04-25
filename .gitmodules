@@ -1,24 +1,24 @@
 [submodule "HAL"]
 	path = HAL
-	url = https://github.com/gwu-robotics/HAL.git
+	url = https://github.com/arpg/HAL.git
 [submodule "SceneGraph"]
 	path = SceneGraph
-	url = https://github.com/gwu-robotics/SceneGraph.git
+	url = https://github.com/arpg/SceneGraph.git
 [submodule "Calibu"]
 	path = Calibu
-	url = https://github.com/gwu-robotics/Calibu.git
+	url = https://github.com/arpg/Calibu.git
 [submodule "Pangolin"]
 	path = Pangolin
-	url = https://github.com/gwu-robotics/Pangolin.git
+	url = https://github.com/arpg/Pangolin.git
 [submodule "GLConsole"]
 	path = GLConsole
-	url = https://github.com/gwu-robotics/GLConsole.git
+	url = https://github.com/arpg/GLConsole.git
 [submodule "Sophus"]
 	path = Sophus
-	url = https://github.com/gwu-robotics/Sophus.git
+	url = https://github.com/arpg/Sophus.git
 [submodule "miniglog"]
 	path = miniglog
-	url = https://github.com/gwu-robotics/miniglog
+	url = https://github.com/arpg/miniglog
 [submodule "Node"]
 	path = Node
-	url = https://github.com/gwu-robotics/Node.git
+	url = https://github.com/arpg/Node.git
