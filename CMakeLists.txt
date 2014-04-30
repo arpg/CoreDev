@@ -6,8 +6,6 @@ cmake_minimum_required(VERSION 2.8.10)
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
-
 option(DISABLE_COREDEV_EXPORTS
   "Should CoreDev subpackages *NOT* be globally exported." OFF)
 
@@ -63,4 +61,4 @@ set( BUILD_COREDEV_EXAMPLES false CACHE BOOL force )
 if(BUILD_COREDEV_EXAMPLES)
   add_subdirectory(Example)
 endif()
-add_subdirectory(Applications)
+
