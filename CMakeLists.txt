@@ -17,15 +17,14 @@ if(DISABLE_COREDEV_EXPORTS)
     string(TOUPPER ${package} PACKAGE)
 
     # Deal with different cases of package names
-    if(EXPORT_${package})
-      set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
-    elseif(EXPORT_${PACKAGE})
-      set(EXPORT_${PACKAGE} OFF CACHE BOOL "Export ${package} package" FORCE)
-    endif()
+    set(EXPORT_${package} OFF CACHE BOOL "Export ${package} package" FORCE)
+    set(EXPORT_${PACKAGE} OFF CACHE BOOL "Export ${package} package" FORCE)
+
+    # Just hide them from the user to not be overwhelming
+    mark_as_advanced(EXPORT_${package})
+    mark_as_advanced(EXPORT_${PACKAGE})
   endforeach()
 endif()
-
-option(BUILD_TESTS "Build tests." OFF)
 
 # Add Aux Libraries
 add_subdirectory(miniglog)
