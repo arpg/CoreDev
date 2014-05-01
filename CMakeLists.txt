@@ -46,7 +46,7 @@ if(NOT ANDROID)
 endif()
 # Add calibration utils
 add_subdirectory(Calibu)
-set(Calibu_DIR ${Calibu_BINARY_DIR}/src)
+set(Calibu_DIR ${Calibu_BINARY_DIR})
 
 add_subdirectory(Node)
 set(Node_DIR ${Node_BINARY_DIR})
