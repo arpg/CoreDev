@@ -1,7 +1,7 @@
 ***********************************************************
 Robotics & Perception Group
-The George Washington University
-http://rpg.robotics.gwu.edu
+University of Colorado
+http://arpg.colorado.edu
 ***********************************************************
 
 This repository includes libraries for basic development. It is composed of:
@@ -14,7 +14,7 @@ CHECKOUT
 ---------
 To checkout the full repo and it's submodules, type:
 
-$ git clone --recursive https://github.com/gwu-robotics/CoreDev.git
+$ git clone --recursive https://github.com/aprg/CoreDev.git
 
 If you have already cloned the repo without the --recursive option, you must
 retrieve the submodules seperately. Execute:
@@ -26,7 +26,7 @@ $ git submodule update
 DEPENDENCIES
 -------------
 The following are the dependencies REQUIRED to build these libraries:
-* GCC Compiler 4.7
+* GCC Compiler 4.7 (or preferably CLANG)
 * CMake (minimum version 2.8.10)
 * OpenGL (ie. Freeglut)
 * GLEW
@@ -59,4 +59,7 @@ $ make -j
 
 EXAMPLES
 -----------
-Both Pangolin and SceneGraph include example applications. Included is also a basic application that uses all 3 libraries: the application will open a camera and display it on the screen.
+Both Pangolin and SceneGraph include example applications. Included is also a
+basic application that uses all 3 libraries: the application will open a camera
+and display it on the screen.
+
