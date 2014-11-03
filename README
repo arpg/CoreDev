@@ -1,6 +1,6 @@
 ***********************************************************
-Robotics & Perception Group
-University of Colorado
+Autonomous Robotics & Perception Group
+University of Colorado - Boulder
 http://arpg.colorado.edu
 ***********************************************************
 
@@ -14,7 +14,7 @@ CHECKOUT
 ---------
 To checkout the full repo and it's submodules, type:
 
-$ git clone --recursive https://github.com/aprg/CoreDev.git
+$ git clone --recursive https://github.com/arpg/CoreDev.git
 
 If you have already cloned the repo without the --recursive option, you must
 retrieve the submodules seperately. Execute:
@@ -26,8 +26,8 @@ $ git submodule update
 DEPENDENCIES
 -------------
 The following are the dependencies REQUIRED to build these libraries:
-* GCC Compiler 4.7 (or preferably CLANG)
-* CMake (minimum version 2.8.10)
+* GCC Compiler 4.8 (or preferably CLANG)
+* CMake (minimum version 3.0)
 * OpenGL (ie. Freeglut)
 * GLEW
 * Eigen3 (minimum version 3.2)
