@@ -1,6 +1,6 @@
 project("ARPG-CoreDev")
 # CMake version 2.8.10 onwards is required for correct dependency tree build.
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 2.8)
 
 # Add auxiliary libraries
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
